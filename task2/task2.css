@@ -73,12 +73,28 @@ article .pic-wrapper img{
     width: 99px;
     height: 80px;
 }
+dl{
+    font-size: 0.8em;
+    width: 121px;
+    height: 125px;
+    border: 1px solid #CBCBCB;
+    text-align: center;
+}
+dl dd{
+    margin: 0;
+}
+dl img{
+
+    width: 99px;
+    height: 80px;
+}
 table{
     width: 100%;
     font-size: 0.8em;
+    border-collapse: collapse;
 }
 table tr{
-    border-top: 1px solid #CCC;
+    border: 1px solid #CCC;
 }
 table tr:first-child{
     background-color: #333;
