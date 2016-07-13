@@ -1,11 +1,11 @@
 ##one simple html file
 
-table colspan
+* table colspan
 
-textarea button有自己的HTML标签
+* textarea button有自己的HTML标签
 
-##artical form label包裹
+* artical form label包裹
 
-##name value
+* name value
 
-##br hr区别
+* br hr区别
