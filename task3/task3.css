@@ -1,0 +1,54 @@
+/* 主体 */
+.main-wrapper{
+    /*width: 100%;*/
+    background-color: #eee;
+    border: 1px solid #999;
+    padding: 20px;
+    display: flex;
+}
+
+.main-wrapper>div{
+    background-color: #fff;
+    margin-right: 20px;
+    border: 1px solid #000;
+    padding: 20px;
+}
+.main-wrapper>div:last-child{
+    margin-right: 0;
+}
+
+/* 左侧 */
+.main-wrapper .left{
+    width: 200px;
+    height: 80px;
+    display: flex;
+}
+.main-wrapper .left img{
+    width: 80px;
+    height: 80px;
+    display: block;
+    margin-right: 20px;
+}
+
+/* 中间 */
+.main-wrapper .middle{
+    width: auto;
+    display: inline-block;
+    height: 100%;
+}
+
+/* 右侧 */
+.main-wrapper .right{
+    width: 120px;
+    height: 100%;
+}
+.main-wrapper .right img{
+    width: 80px;
+    height: 80px;
+    display: block;
+    border: 1px solid #000;
+    margin-bottom: 20px;
+}
+.main-wrapper .right img:last-child{
+    margin-bottom: 0;
+}
