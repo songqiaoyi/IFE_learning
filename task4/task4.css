@@ -1,0 +1,38 @@
+html{
+    height: 100%;
+}
+body{
+    height: 100%;
+}
+.div{
+    width: 100%;
+    height: 100%;
+    display: table;
+}
+.table-cell{
+    display: table-cell;
+    vertical-align: middle;
+}
+.gray{
+    width: 400px;
+    height: 200px;
+    background: #ccc;
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.yellow{
+    width: 100px;
+    height: 100px;
+    background-color: #fc0;
+    position: absolute;
+    border-radius: 50%;
+}
+.yellow:first-child{
+    top: -50px;
+    left: -50px;
+}
+.yellow:last-child{
+    right: -50px;
+    bottom: -50px;
+}
