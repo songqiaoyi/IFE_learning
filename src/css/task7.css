@@ -1,0 +1,642 @@
+body {
+  min-width: 1280px;
+  background-color: #fff;
+  margin: 0;
+  padding: 0;
+}
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0;
+  margin: 0;
+}
+.header {
+  height: 57px;
+  padding: 0 57px;
+}
+.header .h-content {
+  line-height: 57px;
+  font-size: 21px;
+  font-family: "simHei";
+  color: #393a3a;
+}
+.header .h-content .h-title {
+  display: inline-block;
+  width: 140px;
+  height: 100%;
+  text-align: center;
+  background: url("../img/task7/book.png") no-repeat;
+  background-position: 0 center;
+}
+.header .h-content .h-right {
+  overflow: auto;
+  float: right;
+  font-family: "Microsoft YaHei";
+  font-size: 14px;
+  color: #787b83;
+  text-align: center;
+  cursor: pointer;
+}
+.header .h-content .h-right ul {
+  display: inline-block;
+  list-style: none;
+  overflow: auto;
+  vertical-align: top;
+}
+.header .h-content .h-right ul li {
+  display: inline-block;
+  float: left;
+  border-bottom: 5px solid transparent;
+  height: 52px;
+  width: 110px;
+  transition: all 0.5s ease-out;
+}
+.header .h-content .h-right ul li:first-child {
+  width: 65px;
+}
+.header .h-content .h-right ul li:hover,
+.header .h-content .h-right ul li.active {
+  border-bottom: 5px solid #e74f4d;
+}
+.header .h-content .h-right .login {
+  display: inline-block;
+  color: #e74f4d;
+  width: 65px;
+  height: 52px;
+  border-bottom: 5px solid transparent;
+  vertical-align: top;
+  background: url("../img/task7/login.png") no-repeat;
+  background-position: 0 center;
+}
+.s1 {
+  position: relative;
+  width: 100%;
+  height: 690px;
+  background: url("../img/task7/s1-pic.jpg");
+}
+.s1 .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  opacity: 0.1;
+  z-index: 1;
+}
+.s1 .s1-title {
+  position: absolute;
+  top: calc(50% - 130px);
+  left: 9%;
+  width: 457px;
+  height: 267px;
+  font-family: "Microsoft YaHei";
+  color: #fff;
+  z-index: 2;
+}
+.s1 .s1-title h3 {
+  font-size: 60px;
+  font-weight: bolder;
+  margin-bottom: 22px;
+}
+.s1 .s1-title h4 {
+  font-size: 21px;
+  line-height: 35px;
+}
+.s1 .s1-title .button {
+  margin-top: 64px;
+  position: absolute;
+  border-bottom: 0;
+  width: 331px;
+  height: 63px;
+  line-height: 63px;
+  font-size: 30px;
+  background-color: #e74f4d;
+  text-align: center;
+  vertical-align: middle;
+  cursor: pointer;
+}
+.s2 {
+  height: 253px;
+}
+.s2 div.part {
+  width: 25%;
+  height: 100%;
+  display: inline-block;
+  float: left;
+}
+.s2 div.part .pic {
+  height: 130px;
+  text-align: center;
+}
+.s2 div.part .pic img {
+  margin-top: 42px;
+}
+.s2 div.part .content {
+  font-family: "simHei";
+  height: 52px;
+  border-right: 2px solid #aaaaab;
+}
+.s2 div.part .content h4 {
+  line-height: 18px;
+  font-size: 14px;
+  color: #767777;
+  text-align: center;
+}
+.s3 {
+  height: 362px;
+  background-color: #ededec;
+  text-align: center;
+}
+.s3 .pic {
+  padding: 90px 0 50px;
+}
+.s3 h1 {
+  font-size: 54px;
+  font-weight: bolder;
+  color: #323333;
+  line-height: 1;
+  font-family: "simHei";
+}
+.s4 {
+  position: relative;
+  height: 340px;
+  background: url("../img/task7/s4-pic.jpg") no-repeat;
+}
+.s4 .mask {
+  position: absolute;
+  width: 100%;
+  height: 340px;
+  top: 0;
+  left: 0;
+  background-color: #aa3433;
+  opacity: 0.2;
+  z-index: 1;
+}
+.s4 .content {
+  position: absolute;
+  width: 100%;
+  height: 340px;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+.s4 .content .s4-title {
+  padding-top: 50px;
+  color: #fff;
+  text-align: center;
+  margin-bottom: 54px;
+}
+.s4 .content .s4-title h3 {
+  font-size: 21px;
+  margin-bottom: 8px;
+}
+.s4 .content .s4-title h4 {
+  font-size: 12px;
+  margin-top: 16px;
+  position: relative;
+}
+.s4 .content .s4-title h4:before {
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 15px);
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: #fff;
+}
+.s4 .content .s4-select-wrapper {
+  width: 1031px;
+  margin: 0 auto;
+  font-family: "Microsoft YaHei";
+  font-size: 12px;
+  color: #a8aaaa;
+}
+.s4 .content .s4-select-wrapper .select {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  float: left;
+  width: 236px;
+  height: 37px;
+  line-height: 37px;
+  margin-right: 30px;
+  border-radius: 0;
+  border-width: 0;
+  padding-left: 10px;
+}
+.s4 .content .s4-select-wrapper .select option {
+  -webkit-appearance: none;
+  display: block;
+  height: 27px;
+}
+.s4 .content .s4-select-wrapper .button {
+  display: inline-block;
+  float: left;
+  width: 232px;
+  height: 36px;
+  line-height: 36px;
+  background-color: #e74f4d;
+  color: #fff;
+  font-size: 14px;
+  text-align: center;
+}
+.s5 {
+  height: 608px;
+  background-color: #f7f7f7;
+}
+.s5 .s5-content {
+  width: 990px;
+  height: 400px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+.s5 .s5-content .part {
+  width: 220px;
+  height: 390px;
+  margin-right: 35px;
+  display: inline-block;
+  float: left;
+}
+.s5 .s5-content .part:last-child {
+  margin-right: 0;
+}
+.s5 .s5-content .part .pic-wrapper {
+  border: 1px solid #dcdcdc;
+  padding: 14px 8px;
+}
+.s5 .s5-content .part .pic-wrapper img {
+  width: 100%;
+  display: block;
+}
+.s5 .s5-content .part .pic-title {
+  text-align: center;
+  font-family: "Microsoft YaHei";
+}
+.s5 .s5-content .part .pic-title h2 {
+  font-size: 21px;
+  line-height: 32px;
+  color: #323333;
+}
+.s5 .s5-content .part .pic-title h3 {
+  font-size: 18px;
+  line-height: 32px;
+  color: #323333;
+}
+.s5 .s5-content .part .pic-title h4 {
+  font-size: 14px;
+  line-height: 29px;
+  color: #a8aaaa;
+}
+.s6 {
+  height: 565px;
+  overflow: hidden;
+}
+.s6 .s6-left {
+  position: relative;
+  width: 66%;
+  display: inline-block;
+  float: left;
+  background: url("../img/task7/s6-pic.jpg") no-repeat;
+  background-size: 100% 100%;
+  font-family: "Microsoft YaHei";
+  padding: 125px 0;
+  text-align: center;
+  color: #fff;
+}
+.s6 .s6-left .triangle {
+  position: absolute;
+  top: 50%;
+  right: 0;
+  width: 0;
+  height: 0;
+  border-right: 25px solid #fff;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.s6 .s6-left h2 {
+  font-size: 50px;
+}
+.s6 .s6-left h2 span {
+  color: #e74f4d;
+}
+.s6 .s6-left h1 {
+  font-size: 158px;
+  margin-bottom: 30px;
+}
+.s6 .s6-left h4 {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+.s6 .s6-right {
+  box-sizing: border-box;
+  width: 34%;
+  display: inline-block;
+  float: left;
+  height: 100%;
+  padding: 160px 68px;
+  font-family: "Microsoft YaHei";
+  text-align: center;
+}
+.s6 .s6-right h3 {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+.s6 .s6-right h3 span {
+  color: #e74f4d;
+}
+.s6 .s6-right h4 {
+  line-height: 35px;
+  font-size: 12px;
+  color: #a8aaaa;
+  text-align: left;
+}
+.s6 .s6-right .more {
+  border: 1px solid #e74f4d;
+  color: #e74f4d;
+  width: 105px;
+  height: 32px;
+  line-height: 32px;
+  margin: 40px auto 20px;
+}
+.s6 .s6-right .yuan-wrapper {
+  overflow: auto;
+  width: 66px;
+  margin: 0 auto;
+}
+.s6 .s6-right .yuan-wrapper .yuan {
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  float: left;
+  border: 1px solid #919192;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.s6 .s6-right .yuan-wrapper .yuan.active {
+  background-color: #919192;
+}
+.s6 .s6-right .yuan-wrapper .yuan:last-child {
+  margin-right: 0;
+}
+.s7 {
+  height: 519px;
+  overflow: hidden;
+}
+.s7 .part {
+  display: inline-block;
+  float: left;
+  height: 100%;
+  font-family: "simHei";
+  text-align: center;
+  padding: 125px 0;
+}
+.s7 .part .title {
+  line-height: 34px;
+}
+.s7 .part .button {
+  position: relative;
+  width: 170px;
+  height: 43px;
+  line-height: 43px;
+  box-sizing: border-box;
+  border: 1px solid #fff;
+  font-size: 21px;
+  margin: 50px auto;
+}
+.s7 .part .button:before {
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 15px);
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: #fff;
+}
+.s7 .part.part1 {
+  width: 33%;
+  background-color: #e74f4d;
+  color: #fff;
+  font-size: 24px;
+}
+.s7 .part.part2 {
+  width: 33%;
+  color: #000;
+  font-size: 24px;
+}
+.s7 .part.part2 .button {
+  color: #e74f4d;
+  border: 1px solid #e74f4d;
+}
+.s7 .part.part2 .button:before {
+  position: absolute;
+  top: -30px;
+  left: calc(50% - 15px);
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: #ababab;
+}
+.s7 .part.part3 {
+  width: 34%;
+  background: url("../img/task7/s7-pic.jpg") no-repeat;
+  position: relative;
+}
+.s7 .part.part3 .mask {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  opacity: 0.4;
+}
+.s7 .part.part3 .triangle {
+  position: absolute;
+  top: 30%;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 25px solid #fff;
+  border-top: 15px solid transparent;
+  border-bottom: 15px solid transparent;
+}
+.s8 {
+  height: 750px;
+}
+.s8 .up {
+  height: 303px;
+  width: 100%;
+}
+.s8 .up .center {
+  padding: 120px 34% 0 33%;
+  width: 33%;
+  text-align: center;
+}
+.s8 .up .center .title {
+  font-size: 21px;
+  color: #323333;
+  font-family: "simHei";
+}
+.s8 .up .center .desc {
+  margin-top: 30px;
+  position: relative;
+  font-size: 12px;
+  color: #aaa;
+  font-family: "Microsoft YaHei";
+}
+.s8 .up .center .desc:before {
+  position: absolute;
+  top: -17px;
+  left: calc(50% - 15px);
+  content: '';
+  width: 30px;
+  height: 2px;
+  background: #e74f4d;
+}
+.s8 .down {
+  height: 444px;
+}
+.s8 .down .left {
+  display: inline-block;
+  float: left;
+  width: 33%;
+  color: #231815;
+}
+.s8 .down .left .content {
+  padding-left: 136px;
+}
+.s8 .down .left .title {
+  font: 14px/50px "Microsoft YaHei";
+}
+.s8 .down .left .desc {
+  font: 12px/1.5 "simHei";
+}
+.s8 .down .left .view-more {
+  text-align: right;
+  font: 12px/20px "simHei";
+  position: relative;
+}
+.s8 .down .left .view-more span {
+  cursor: pointer;
+}
+.s8 .down .left .view-more span:before {
+  content: '';
+  position: absolute;
+  top: 5px;
+  right: 36px;
+  width: 5px;
+  height: 5px;
+  border: 1px solid #231815;
+  border-width: 0 0 1px 1px;
+  transform: rotate(-45deg);
+}
+.s8 .down .right {
+  display: inline-block;
+  float: left;
+  width: 67%;
+}
+.s8 .down .right .content {
+  width: 640px;
+  margin-left: 80px;
+}
+.s8 .down .right .content input,
+.s8 .down .right .content textarea {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  padding-left: 20px;
+  background: #edecee;
+  color: #231815;
+  font: 12px/40px "simHei";
+  margin-bottom: 15px;
+  border: 1px solid #edecee;
+}
+.s8 .down .right .content input:nth-child(2n+1),
+.s8 .down .right .content textarea:nth-child(2n+1) {
+  margin-right: 15px;
+}
+.s8 .down .right .content input:focus,
+.s8 .down .right .content textarea:focus {
+  background: #fff;
+}
+.s8 .down .right .content input {
+  width: 310px;
+  height: 40px;
+}
+.s8 .down .right .content textarea {
+  width: 100%;
+  height: 120px;
+}
+.s8 .down .right .content button {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  border: 1px solid #edecee;
+  width: 100%;
+  height: 40px;
+  font: 14px/40px "simHei";
+  color: #323333;
+  text-align: center;
+  background: #edecee;
+}
+.s9 {
+  height: 358px;
+  box-sizing: border-box;
+  text-align: center;
+  color: #fff;
+  background: #32363f;
+}
+.s9 h3 {
+  padding-top: 80px;
+  font: bold 21px/36px "simHei";
+}
+.s9 h4 {
+  font: 12px/14px "simHei";
+}
+.s9 .btn-wrapper {
+  margin: 30px auto;
+  height: 40px;
+}
+.s9 .btn-wrapper input {
+  height: 100%;
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  padding-left: 20px;
+  width: 430px;
+  color: #aaa;
+  font: 14px/40px "Microsoft YaHei";
+  border: 1px solid #6f7278;
+  vertical-align: middle;
+}
+.s9 .btn-wrapper button {
+  -webkit-appearance: none;
+  box-sizing: border-box;
+  height: 100%;
+  font: 15px/40px "Microsoft YaHei";
+  width: 80px;
+  background: #6f7278;
+  border: 1px solid #6f7278;
+  vertical-align: middle;
+}
+.s9 .share-wrapper img {
+  margin-right: 30px;
+}
+.s9 .share-wrapper img:last-child {
+  margin-right: 0;
+}
+.footer {
+  height: 58px;
+  padding: 0 37px 0 100px;
+  background: #2f2f38;
+  font: 12px/58px "simHei";
+  color: #fff;
+  position: relative;
+}
+.footer a {
+  position: absolute;
+  right: 37px;
+  color: #fff;
+  text-decoration: none;
+}
